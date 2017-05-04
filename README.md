@@ -13,6 +13,15 @@ contacts.getContacts(function(err, contacts) {
     // ...
 });
 ```
+# Refresh Your Token
+
+```javascript
+var GoogleContacts = require('google-contacts-api');
+var contacts = new GoogleContacts();
+contacts.refreshAccessToken(req.refreshToken , function(err, function(err,newToken)) {
+    // ...
+});
+```
 
 # test 
 
